@@ -1,17 +1,13 @@
 # Audio Visualizer
 
-Real-time audio waveform visualizer that processes uncompressed WAV files and renders frequency/amplitude streams.
+A visualizer in Python that reads WAV audio files and draws animated waveform bars in real time.
 
-## Overview
+## What it does
 
-Parses raw PCM audio byte streams from `.wav` files, extracts channel amplitudes per frame buffer, and animates real-time waveform bars matching the audio envelope.
+- Parses raw audio byte streams from uncompressed `.wav` files.
+- Extracts amplitude data per frame to calculate frequency bins.
+- Renders animated visualizer bars synced to music playback using Pygame.
 
-## Features
+## Stack
 
-- Reads uncompressed multi-channel WAV streams.
-- Amplitude normalization and frequency binning across playback frames.
-- Real-time animated visualization using Pygame.
-
-## Tech Stack
-
-Python, Pygame, NumPy, Wave
+Python, Pygame, NumPy
